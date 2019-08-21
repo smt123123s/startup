@@ -1,0 +1,249 @@
+<%- include('common/header'); %>
+<%- include('common/navagation'); %>
+
+<div class="top"></div>
+
+<div class="container-fluid">
+    <div class="row">
+    
+        <div class="col-1"></div>
+    
+        <div class="col-2">
+            <a href="/sellEvent">
+                <img src="/img/label.png" alt="label" class ='img-fluid'>
+            </a>
+        </div>
+    
+        <div class="col-8">
+            <img src="/img/website-contactUs.jpg" alt="label" class = 'img-fluid'>
+        </div>
+    
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-6"></div>
+            
+        <div class="col-5 font-title">
+            聯絡資料
+        </div>
+            
+    </div>
+
+    <div class="row">
+
+        <div class="col-3"></div>
+
+        <div class="col-5">
+
+            <div class = 'mt-1'>
+                <i class = 'fa fa-compass fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>地址：觀塘興業街29號萬有引力3樓302號室</span>
+            </div>
+
+            <div class = 'mt-1'>
+                <i class = 'fa fa-envelope fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>電郵地址：info@wsquarebc.com</span>
+            </div>
+            
+            <div class = 'mt-1'>
+                <i class = 'fa fa-phone fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>查詢熱線：9136-8476</span>
+            </div>
+
+            <div class = 'mt-1'>
+                <i class = 'fa fa-whatsapp fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>Whatsapp：9136-8476</span>
+            </div>
+
+            <div class = 'mt-1'>
+                <i class = 'fa fa-wechat fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>Wechat：9136-8476</span>
+            </div>
+
+            <div class = 'mt-1'>
+                <i class = 'fa fa-facebook-square fa-2x contactLogo mr-1'></i>
+                <span class = 'contactFont'>Facebook：
+                    <a href="https://www.facebook.com/W-Square-%E7%94%9F%E6%84%8F%E8%B2%B7%E8%B3%A3-106031924097105/?modal=admin_todo_tour" target='blank'>
+                        W Square
+                    </a>    
+                </span>
+            </div>
+            
+        </div>
+
+        <div class="col-3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1844017740086!2d114.22371911541555!3d22.30886474822049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404014523d30513%3A0x21e6f0a135b24be6!2sTimely+Factory+Building%2C+29+Hing+Yip+St%2C+Kwun+Tong!5e0!3m2!1sen!2shk!4v1566211031220!5m2!1sen!2shk" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>               
+                
+
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-6"></div>
+                
+        <div class="col-5 font-title ml-5">
+            查詢
+        </div>
+                
+    </div>
+
+    <form action="/buyEvent/upload" method = 'POST' class = 'mt-5 needs-validation' novalidate>
+
+    
+        <div class="form-group row">
+    
+            <div class="col-3"></div>
+    
+            <label class = 'label-font mr-2 mt-2'>姓名</label>
+            <div class="col-3">
+                <input class = 'mt-1 form-control ' type = 'text' placeholder = '請輸入您的名字~' name = 'bName' required>
+                <div class="invalid-feedback">
+                    請填寫你的名字~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+    
+            <div class="col-1"></div>
+            <label class = 'label-font mr-2 mt-2'>心水行業</label>
+            <div class="col-3">
+                <select name="bOccupation" class = 'form-control mt-1' required>
+                    <option value =''>--揀一個--</option>
+                    <option value ='教育'>教育</option>
+                    <option value ='餐飲'>餐飲</option>
+                    <option value ='PartyRoom'>Partyroom</option>
+                    <option value ='美容'>美容</option>
+                    <option value ='零售'>零售</option>
+                    <option value ='服務'>服務</option>
+                    <option value ='時裝'>時裝</option>
+                    <option value ='洗衣'>洗衣</option>
+                    <option value= '其他'>其他</option>
+                </select>        
+                    <div class="invalid-feedback">
+                        請填寫你的心水行業~
+                    </div>
+                    <div class="valid-feedback">
+                        OK！
+                    </div>
+            </div>
+        
+        </div>
+    
+        <div class="form-group row">
+    
+            <div class="col-3"></div>
+    
+            <label class = 'label-font mr-2 mt-2'>電話</label>
+            <div class="col-3">
+                <input class = 'mt-1 form-control ' type = 'number' placeholder = '填寫電話~' name = 'bPhone' required>
+                <div class="invalid-feedback">
+                    請填寫您的電話~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+    
+            <div class="col-1"></div>
+            <label class = 'label-font mr-2 mt-2'>資金預算 </label>
+            <div class="col-3">
+                <input class = 'mt-1 form-control' type = 'text' placeholder = '估下預算~' name = 'bBudget' required>
+                <div class="invalid-feedback">
+                    請填寫你的預算~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="form-group row">
+    
+            <div class="col-3"></div>
+    
+            <label class = 'label-font mr-2 mt-2 '>電郵</label>
+            <div class="col-3" >
+                <input class = 'mt-1 form-control' type = 'email' placeholder = '請填寫您的電郵~' name = 'bEmail' required>
+                <div class="invalid-feedback">
+                    請填寫你的電郵~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+    
+            <div class="col-1"></div>
+    
+            <label class = 'label-font mr-2 mt-2'>投入程度</label>
+            <div class="col-3">
+                <input class = 'mt-1 form-control ' type = 'text' placeholder = '你想投入幾多~' name = 'bPrice' required>
+                <div class="invalid-feedback">
+                    請填寫你的投入程度~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="form-group row">
+    
+            <div class="col-3"></div>
+            <div class="col-5 form-check mt-4 ml-4">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    我同意W<sup>2</sup>使用我的個人資料及向我提供有關W<sup>2</sup>的生意買賣資訊
+                </label>
+                <div class="invalid-feedback">
+                        請同意~
+                </div>
+                <div class="valid-feedback">
+                    OK！
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="form-group row">
+    
+            <div class="col-5"></div>
+    
+            <div class="col-5">
+                <button type="submit" class="btn btn-outline-dark mt-5 ml-5 w-50" tabindex = '0' id ='sellSubmit'>提交~</button>
+            </div>
+    
+        </div>
+    </form>
+    
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+              'use strict';
+            window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+            });
+            }, false);
+        })();
+    </script>
+
+</div>
+
+
+<%- include('common/footer'); %>

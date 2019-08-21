@@ -1,0 +1,333 @@
+@font-face{
+    font-family: mHei_Bold;
+    src: url("/font/MHeiHK-Bold.otf")
+}
+@font-face{
+    font-family: mHei_xBold;
+    src: url("/font/MHeiHK-Xbold.TTF")
+}
+@font-face{
+    font-family: mHei_Light;
+    src: url("/font/MHeiHK-Light.otf")
+}
+@font-face{
+    font-family: mHei_Medium;
+    src: url("public/font/MHeiHK-Medium.otf")
+}
+.top{
+    margin-top:150px;
+}
+
+#top-nav{
+    background-color:#C30D23;
+    margin-top:0;
+   
+}
+
+#top-nav a{
+    font-family: mHei_Light;
+    font-size: 13px;
+    color: #ffffff !important;
+}
+
+.left-menu{
+    margin-left:20%;
+}
+
+.right-menu{
+    margin-left: 40%;
+}
+
+.bottom-left-menu{
+    margin-left:21%;
+}
+
+.bottom-right-menu{
+    margin-left:28%;
+}
+
+#bottom-nav{
+    background-color: #ffffff;
+    margin-top:40px;
+    box-shadow: 10px 10px 35px #888888;
+}
+
+#bottom-nav a{
+    font-family: mHei_Bold;
+    font-size: 18px;
+    color: #000000 !important;
+}
+
+.noShow {
+    display: none;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.font-title{
+    font-family: mHei_xBold;
+    font-size: 35px;
+}
+
+.category-pic{
+    width: 60px;
+}
+
+.category-font{
+    font-family: mHei_Light;
+    font-size:18px;
+    color: #000000;
+}
+
+.homepageProductList{
+
+    background-color: rgb(225, 220, 220);
+    padding-bottom: 20%;
+}
+
+.product-font{
+    font-family: mHei_xBold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#pName {
+    font-family: mHei_xBold;
+    font-size: 20px;
+    color: #000000 !important;
+    text-align: center;
+    padding-right: 25%;
+}
+
+.pDescription{
+    font-family: mHei_Bold;
+    font-size: 16px;
+    color: #000000;
+    border-top: 0 !important;
+}
+
+.secondP {
+    padding-left: 20%;
+}
+
+.thirdP {
+    padding-left: 25%;
+}
+
+.fourthP {
+    padding-left: 17%;
+}
+
+
+#footer-nav {
+    background-color: #C30D23;
+}
+
+
+.copyright{
+    color: #ffffff;
+    font-family: mHei_Light;
+    font-size: 10px;
+}
+
+.footer-font{
+    color: #ffffff;
+    font-family: mHei_Light;
+    font-size: 14px;
+}
+
+.footer-icon{
+    color:#ffffff;
+}
+
+.footer-icon :hover{
+    color: #ffffff !important;
+}
+
+
+.label-font{
+    font-family: mHei_Bold;
+    font-size: 20px;
+    text-align: left;
+    margin-left:30px;
+}
+
+.label-font-subtitle{
+    font-family: mHei_xBold;
+    font-size: 21px;
+}
+
+#footer-nav a{
+    text-decoration: none;
+}
+
+.hrLine {
+    
+    height: 3px;
+    border: none;
+    border-top: 1px solid black;
+    
+}
+
+.contactFont {
+    font-family: mHei_Light;
+    font-size: 20px;
+    color:#C30D23;
+
+}
+
+.contactLogo{
+    color: #C30D23;
+}
+
+.cardSetting{
+
+    background-color: rgb(225, 220, 220);
+    border: none;
+
+}
+
+.productTitle{
+    
+    font-family: mHei_xBold;
+    background-color: #C30D23;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.productSubTitle{
+
+    font-family: mHei_xBold;
+    color: #ffffff;
+    font-size: 24px;
+    
+}
+
+.productContent{
+    
+    font-family: mHei_xBold;
+    color: #000000;
+    font-size: 30px;
+    text-align:center;
+}
+
+.productSubContent{
+
+    font-family: mHei_Bold;
+    color: #000000;
+    font-size: 24px;
+}
+
+.productSubContentBlue{
+    background-color: #CCFFFF;
+    font-family: mHei_Bold;
+    color: #000000;
+    font-size: 24px;
+    margin-right: 35%;
+    display: inline;
+}
+
+.productSubContentBlue2{
+    background-color: #ffffff;
+    font-family: mHei_Bold;
+    color: #000000;
+    font-size: 24px;
+    display: inline;
+}
+
+.applyButton{
+    background-color: #ffffff;
+}
+
+.w-90{
+    width: 90% !important;
+}
+
+.pNo{
+    font-family: mHei_Light;
+    font-size: 20;
+    color: #C30D23;
+    position: absolute;
+    top:5px;
+    left:10px;
+}
+
+.tagInformation{
+    text-align: center;
+}
+
+.relateProductTitle{
+    font-family: mHei_xBold;
+    background-color: #C30D23;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0 0 0 0 !important;
+    border: solid 1px #C30D23;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 70%;
+
+}
+
+
+.relateProduct-table{
+    font-family: mHei_Light;
+    font-size:18px;
+    color: #000000;
+    background-color: #ffffff;
+    padding:0 !important;
+
+}
+
+.relateProduct-table a{
+    text-decoration: none;
+}
+
+
+.indiPDescription {
+    font-family: mHei_Bold;
+    font-size: 20px;
+    color: #000000;
+    border-top: 0 !important;
+}
+
+
+@media screen and (max-width: 1010px){
+    .right-menu{
+        margin-left: 20%;
+    }
+    .left-menu{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .right-menu{
+        margin-left: 20%;
+    }
+    .left-menu{
+        margin-left: 20%;
+    }
+
+    #bottom-nav {
+        display: none;
+    }
+
+    .noShow{
+        display: block;
+    }
+    .main{
+        margin-top: 70px;
+    }
+    
+    .font-title {
+        font-size:18px;
+    }
+}

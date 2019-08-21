@@ -1,0 +1,130 @@
+<!-- 搜尋器表單 -->
+<div class="row mt-5">
+    <div class="col-2 "></div>
+
+    <div class="col mt-5 label-font-subtitle">
+        搜尋適合你買賣的生意
+    </div>
+</div>
+
+<form action = '/filter/result' method = 'POST' class = 'mt-5'> 
+        
+    <div class="form-group row">
+
+        <div class="col-3"></div>
+        <label class = 'label-font mr-2 mt-2'>關鍵字</label>
+        <div class="col-2">
+            <input class = 'mt-1 form-control ' type = 'text' placeholder = '請輸入查詢關鍵字~' name = 'pName'>
+        </div>
+
+        <label class = 'label-font mr-2 mt-2'>頂手費</label>
+        <div class="col-1">
+            <input class = 'mt-1 form-control ' type="text" placeholder = '最少頂手費~' name = 'minCost' >
+        </div>
+
+        <div class="col-1">
+            <input class = 'mt-1 form-control ' type="text" placeholder= "最多頂手費~" name = 'maxCost' >
+        </div>
+
+        <label class = 'label-font mr-2 mt-2'>面積</label>
+
+        <div class="col-1">
+            <input class = 'mt-1 form-control ' type="text" placeholder = '最小面積~' name = 'minArea' >
+        </div>
+
+        <div class="col-1">
+            <input class = 'mt-1 form-control ' type="text" placeholder="最大面積~" name = 'maxArea' >
+        </div>
+           
+    </div>
+
+
+    <div class="form-group row">
+        
+        <div class="col-3"></div>
+
+        <label class = 'label-font mr-2 mt-2'>行業</label>
+        <div class="col-2">
+            <select name="Industry" class = 'form-control mt-1 ml-3'>
+                <option value =''>--揀一個--</option>
+                <option value ='教育'>教育</option>
+                <option value ='餐飲'>餐飲</option>
+                <option value ='PartyRoom'>Partyroom</option>
+                <option value ='美容'>美容</option>
+                <option value ='零售'>零售</option>
+                <option value ='服務'>服務</option>
+                <option value ='時裝'>時裝</option>
+                <option value ='洗衣'>洗衣</option>
+                <option value ='其他'>其他</option>
+            </select>
+        </div>
+
+        <label class = 'label-font mr-2 mt-2'>參考利潤</label>
+        
+        <div class="col-1">
+            <input class = 'mt-1 form-control' type="text" placeholder="最少參考利潤~" name = 'minRevenue' >
+        </div>
+
+        <div class="col-1">
+            <input class = 'mt-1 form-control' type="text" placeholder="最多參考利潤~" name = 'maxRevenue' >
+        </div>
+
+        <label class = 'label-font mr-2 mt-2'>租金</label>
+        <div class="col-1">
+            <input class = 'mt-1 form-control' type="text" placeholder="最少租金~" name = 'minRent' >
+        </div>
+
+        <div class="col-1">
+            <input class = 'mt-1 form-control' type="text" placeholder="最多租金~" name = 'maxRent' >
+        </div>
+
+
+    </div>
+
+    <div class="form-group row">
+
+        <div class="col-3"></div>
+
+        <label class = 'label-font mr-2 mt-2'>地區</label>
+
+        <div class="col-2">
+            <select name="Position" class = 'form-control mt-1 ml-3'>
+                <option value =''>--揀一個--</option>
+                <option disabled>--香港島--</option>
+                <option value ='南區'>南區</option>
+                <option value ='東區'>東區</option>
+                <option value ='銅鑼灣區'>銅鑼灣區</option>
+                <option value ='灣仔區'>灣仔區</option>
+                <option value ='中西區'>中西區</option>
+                <option disabled>--九龍--</option>
+                <option value="觀塘區">觀塘區</option>
+                <option value="黃大仙區">黃大仙區</option>
+                <option value="九龍城區">九龍城區</option>
+                <option value="深水埗區">深水埗區</option>
+                <option value="油尖旺區">油尖旺區</option>
+                <option disabled>--新界--</option>
+                <option value="葵青區">葵青區</option>
+                <option value="元朗區">元朗區</option>
+                <option value="荃灣區">荃灣區</option>
+                <option value="屯門區">屯門區</option>
+                <option value="沙田區">沙田區</option>
+                <option value="大埔區">大埔區</option>
+                <option value="北區">北區</option>
+                <option value="西貢/將軍澳區">西貢/將軍澳區</option> 
+            </select>
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-10"></div>
+        
+        <div class="col-2">
+            <button class = 'btn btn-outline-dark mt-3' type = "submit" tabindex="0" >搜尋~</button>
+        </div>
+    </div>     
+                        
+</form>

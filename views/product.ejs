@@ -1,0 +1,64 @@
+<%- include('common/header'); %>
+<%- include('common/navagation'); %>
+
+
+
+
+<div class ='top'></div>
+<% for (var i = 0; i < 3; i++ ) { %>
+                
+    <div class="col-3 mt-4">
+        <a href="/product/<%= product[i].pId %>">
+            <img src= '<%= product[i].pImg %>' alt="product_pic" class ='img-fluid w-75'>
+        </a>
+        <p id = 'pName' class = 'mt-2'><%= product[i].pName %></p>
+        
+        <div>
+            <div  class = 'btn btn-primary '>創業之選</div>
+            <div  class = 'btn btn-secondary '>創業之選</div>
+            <div  class = 'btn btn-success '>創業之選</div>
+            <div  class = 'btn btn-danger '>創業之選</div>
+        </div>
+        
+        <span class= "pDescription">地區：<%= product[i].pPosition %> </span>
+        <span class= "pDescription secondP">行業：<%= product[i].pCategory %> </span>
+        <div></div>
+        <span class= "pDescription">面積：<%= product[i].pArea %>呎<span>
+        <span class = "pDescription thirdP">租金：$<%= product[i].pRent %></span>
+        <div></div>
+        <span class= "pDescription">頂手費：$<%= product[i].pCost %></span>
+        <span class = "pDescription fourthP">參考利潤：$<%= product[i].pRevenue %></span>
+    </div>
+
+<% } %>
+
+
+<% for (var i = 0; i < product.length; i++) { %>
+
+ <div>
+
+     <% if (product[i].pTag.length != 0) { %>
+        
+        <% if (product[i].pTag[0] != null) { %>
+            <div  class = 'btn btn-primary'><%= product[i].pTag[0] %></div>
+        <% } %>
+        
+        <% if (product[i].pTag[1] != null) { %>
+            <div  class = 'btn btn-secondary'><%= product[i].pTag[1] %></div>
+        <% } %>
+
+        <% if (product[i].pTag[2] != null) { %>
+            <div  class = 'btn btn-success'><%= product[i].pTag[2] %></div>
+        <% } %>
+        
+        <% if (product[i].pTag[3] != null) { %>
+            <div  class = 'btn btn-danger'><%= product[i].pTag[3] %></div>
+        <% } %>
+
+    <% } %>
+ </div>
+
+<% } %>
+
+
+<%- include('common/footer'); %> 
